@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：三栏式布局</title>
+	<style>
+		body { margin: 0; padding: 0; font-family: "Microsoft Yahei"; }
+		img { background: #eee; vertical-align: top; }
+
+		.fl { float: left; }
+		.fr { float: right; }
+		.clearfix:before,
+		.clearfix:after { content: " "; display: table; }
+		.clearfix:after { clear: both; }
+		/*** For IE 6/7 only ***/
+		.clearfix { *zoom: 1; }
+
+		#wrap { padding: 20px 142px 20px 222px; margin: 20px; background: #eee; }
+		#wrap .column { position: relative; float: left; }
+
+		#center { width: 100%; }
+		#left { width: 202px; right: 202px; margin-left: -100%; }
+		#right { width: 122px; margin-right: -122px; }
+		/*** IE6 Fix ***/
+		*html #left { left: 150px; }
+
+		#wrap, header, main, aside, header img, aside img { border: 1px solid #999; }
+
+		header, main, aside { background: #fff; padding: 20px; }
+		main { margin: 0 20px; font-size: 16px; }
+		main h2 { font-size: 16px; }
+		main p { line-height: 30px; text-indent: 2em; }
+		header img, aside img { width: 80px; height: 80px; }
+		header h1 { font-size: 16px; margin: 0; max-width: 58px; }
+		aside { padding-bottom: 0; }
+		aside img { margin-bottom: 20px; }
+	</style>
+</head>
+<body>
+	<div id="wrap" class="clearfix">
+		<div id="center" class="column">
+			<main>
+				<h2>关于我们男神队</h2>
+				<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+				<h2>关于我们男神队</h2>
+				<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+				<h2>关于我们男神队</h2>
+				<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+			</main>
+		</div>
+		<div id="left" class="column">
+			<header class="clearfix">
+				<img src="#" alt="男神队" class="fl">
+				<h1 class="fr">男神队</h1>
+			</header>
+		</div>
+		<div id="right" class="column">
+			<aside>
+				<img src="#" alt="个人logo">
+				<img src="#" alt="个人logo">
+				<img src="#" alt="个人logo">
+				<img src="#" alt="个人logo">
+			</aside>
+		</div>
+	</div>
+</body>
+</html>
