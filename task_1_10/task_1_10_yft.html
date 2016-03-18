@@ -10,12 +10,12 @@
         .height120 { height: 120px; }
         .height200 { height: 200px; }
 
-        .container { padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-flow: row wrap; }
+        .container { padding: 20px; display: flex; justify-content: space-between; align-items: center; }
         .container div { width: 150px; border: 2px solid #f00; margin-bottom: 20px; }
         .border-blue { border-color: blue !important; }
 
         @media (max-width: 640px) {
-            .container { align-items: flex-start; }
+            .container { align-items: flex-start; flex-flow: row wrap; }
             .container div { order: 2; }
             .container .border-blue { order: 1; }
         }
