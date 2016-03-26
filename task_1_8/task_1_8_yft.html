@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务八：响应式网格（栅格化）布局</title>
+	<style>
+	* { box-sizing: border-box; }
+	.grid-container { width: 100%; }
+	.row:before,
+	.row:after { content: ""; display: table; clear: both; }
+	[class*='col-'] { float: left; min-height: 1px; width: 8.33%;
+		/* gutter */
+		padding: 10px; }
+
+	@media all and (max-width: 768px) {
+		.col-sm-1 { width: 8.33%; }
+		.col-sm-2 { width: 16.66%; }
+		.col-sm-3 { width: 25%; }
+		.col-sm-4 { width: 33.33%; }
+		.col-sm-5 { width: 41.66%; }
+		.col-sm-6 { width: 50%; }
+		.col-sm-7 { width: 58.33%; }
+		.col-sm-8 { width: 66.66%; }
+		.col-sm-9 { width: 75%; }
+		.col-sm-10 { width: 83.33%; }
+		.col-sm-11 { width: 9.66%; }
+		.col-sm-12 { width: 100%; }
+	}
+	
+	@media all and (min-width: 768px) {
+		.col-md-1 { width: 8.33%; }
+		.col-md-2 { width: 16.66%; }
+		.col-md-3 { width: 25%; }
+		.col-md-4 { width: 33.33%; }
+		.col-md-5 { width: 41.66%; }
+		.col-md-6 { width: 50%; }
+		.col-md-7 { width: 58.33%; }
+		.col-md-8 { width: 66.66%; }
+		.col-md-9 { width: 75%; }
+		.col-md-10 { width: 83.33%; }
+		.col-md-11 { width: 9.66%; }
+		.col-md-12 { width: 100%; }
+	}
+
+	/* 具体的样式 */
+	[class*='col-'] { min-height: 50px; }
+	[class*='col-']>div { border: 1px solid #999; background-color: #eee; min-height: 50px; }
+	</style>
+</head>
+<body>
+	<div class="grid-container outline">
+		<div class="row">
+			<div class="col-sm-6 col-md-4"><div></div></div>
+			<div class="col-sm-6 col-md-4"><div></div></div>
+			<div class="col-sm-12 col-md-4"><div></div></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-md-3"><div></div></div>
+			<div class="col-sm-6 col-md-6"><div></div></div>
+			<div class="col-sm-3 col-md-3"><div></div></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-1"><div></div></div>
+			<div class="col-sm-2 col-md-1"><div></div></div>
+			<div class="col-sm-8 col-md-2"><div></div></div>
+			<div class="col-sm-3 col-md-2"><div></div></div>
+			<div class="col-sm-3 col-md-6"><div></div></div>
+		</div>
+	</div>
+</body>
+</html>
