@@ -37,12 +37,19 @@ var aqiData = [
       output = document.getElementById("aqi-list");
   button.onclick = function(){
     var value = input.value;
+    //方法一
     var outputStr = "";
     for(var i = 0,len = aqiData.length;i<len;i++){
       if(aqiData[i][1] >= value){
         outputStr += "<li>"+aqiData[i][0]+"</li>"
       }
     }
+    //方法二
+    // aqiData.filter(function(item){
+    //   if(item[1] >= value){
+    //     outputStr += "<li>"+item[0]+"</li>"
+    //   }
+    // });
     output.innerHTML = outputStr;
   }
 })();
