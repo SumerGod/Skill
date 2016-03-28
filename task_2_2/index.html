@@ -41,7 +41,7 @@ var aqiData = [
     var outputStr = "";
     for(var i = 0,len = aqiData.length;i<len;i++){
       if(aqiData[i][1] >= value){
-        outputStr += "<li>"+aqiData[i][0]+"</li>"
+        outputStr += "<li>"+aqiData[i][0]+","+aqiData[i][1]+"</li>"
       }
     }
     //方法二
