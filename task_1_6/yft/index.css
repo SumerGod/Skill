@@ -1,4 +1,5 @@
 html { font-family: "微软雅黑"; background-color: #999; }
+body { margin: 0; }
 a { text-decoration: none; }
 img { vertical-align: top; }
 /* float and clear float */
@@ -20,9 +21,9 @@ img { vertical-align: top; }
 .color-orange { color: #d2994f; }
 .color-purple { color: #cc7680; }
 
-body { margin: 0; }
 .wrap { padding: 0 44px; width: 892px; margin: 0 auto; background-color: #fff; }
 
+/* header */
 header { justify-content: space-between; border-bottom: 2px solid #938e8c; }
 header h1 { margin: 0; width: 110px; height: 61px; background-color: #DB3E75; }
 header h1 a { color: #fff; font: 12px "黑体"; line-height: 102px; padding-left: 6px; }
@@ -30,14 +31,14 @@ header time { align-self: flex-end; font: 12px "黑体"; color: #d45d5c; padding
 
 /* top */
 .top { padding-top: 34px; justify-content: space-between; }
-	/* article */
-		/* banner */
+	/* top_left */
+		/* top_left_top */
 .top .banner { position: relative; width: 641px; height: 301px; }
 .top .banner img { width: 100%; height: 100%; }
 .mask-green, .mask-purple { position: absolute; bottom: 0; width: 191px; height: 100%; background: rgba(65, 140, 89, 0.5); }
 .mask-green { left: 0; }
 .mask-purple { right: 0; background: rgba(204, 128, 145, 0.5); }
-		/* paras */
+		/* top_left_bottom */
 .top .paras { padding-top: 38px; justify-content: space-between; }
 .top .paras section:nth-child(1) { width: 231px; }
 .top .paras section:nth-child(2) { width: 207px; }
@@ -47,7 +48,7 @@ header time { align-self: flex-end; font: 12px "黑体"; color: #d45d5c; padding
 .top .paras ul { opacity: 0.7; font-size: 12px; padding-left: 4px; margin: 22px 0 0; }
 .top .paras ul li { list-style: none; color: #231815; padding-top: 2px; padding-bottom: 2px; }
 .top .paras ul li span { color: #cd4a48; font-style: italic; }
-	/* bignews */
+	/* top_right */
 .top .bignews { width: 203px; border-top: 2px solid #cc8091; }
 .top .bignews h2 { margin: 8px 0 0; }
 .top .bignews h2 p { margin: 0; font-size: 24px; font-weight: normal; text-decoration: underline; line-height: 28px; font-variant: small-caps; }
@@ -58,7 +59,7 @@ header time { align-self: flex-end; font: 12px "黑体"; color: #d45d5c; padding
 .top .bignews .fs-21 { line-height: 12px; }
 /* bottom */
 .bottom { padding-top: 75px; padding-bottom: 40px; justify-content: space-between; }
-    /* left */
+    /* bottom_left */
 .bottom article { width: 415px; flex-shrink: 0; }
 .bottom h2 { font: 42px "黑体"; font-weight: bold; color: #11456b; line-height: 43px; margin: 0; border-bottom: 2px solid #11456b; padding-bottom: 12px; }
 .bottom h2 .color-yellow { font-size: 72px; font-style: italic; }
@@ -67,30 +68,32 @@ header time { align-self: flex-end; font: 12px "黑体"; color: #d45d5c; padding
 .bottom article p:first-of-type { text-indent: 0; margin-top: 25px; }
 .bottom article p:first-of-type:first-letter { padding: 9px; color: #f5e327; font: 70px "微软雅黑"; font-variant: small-caps; float: left; line-height: 50px; }
 .bottom article p img { margin: 16px 5px 16px 20px; float: right; }
-    /* right */
-.bottom .text { width: 458px; justify-content: space-between; margin-top: 30px; }
-        /* slider */
+    /* bottom_right */
+.bottom > .flex-col { width: 458px; }
+        /* bottom_right_top */
 .bottom .slider { position: relative; }
-.bottom .slider img { width: 458px; height: 257px; }
-.bottom .slider .title { position: absolute; left: 0; bottom: 0; width: 458px; height: 61px; background: rgba(0, 0, 0, 0.4); }
+.bottom .slider img { width: 100%; height: 257px; }
+.bottom .slider .title { position: absolute; left: 0; bottom: 0; width: 100%; height: 61px; background: rgba(0, 0, 0, 0.4); }
 .bottom .slider .title h3 { margin: 8px 0 8px 38px; border-left: 3px solid #72b16a; line-height: 44px; color: #fff; text-indent: 12px; }
 .bottom .slider .title small { line-height: 68px; color: #72b16a; font-style: italic; font-size: 12px; padding-left: 8px; }
-        /* list */
+        /* bottom_right_bottom */
 .bottom .list { padding-top: 10px; background: #edebd4; margin-top: 30px; justify-content: space-between; }
 .bottom .list ul { padding-left: 30px; padding-right: 20px; margin: 0; font: 16px "宋体"; }
 .bottom .list ul li { list-style: none; padding-left: 18px; background: url("./images/list_style.png") no-repeat left; margin-top: 23px; }
 .bottom .list ul li a { color: #5a5b5b; }
 .bottom .list ul li span { font-style: italic; font-size: 12px; text-align: right; }
-.bottom .flex-row > div { justify-content: space-around; flex-shrink: 0; background: #DB3E75; color: #fff; width: 260px; height: 160px; }
-.bottom .flex-row > div > span { font-size: 110px; border-right: 2px solid #fff; align-self: center; line-height: 86px; padding-right: 3px; }
-.bottom .flex-row > div > div { width: 158px; align-self: center; height: 80px; }
-.bottom .flex-row > div > div h3 { font: italic 21px "黑体"; line-heigh: 24px; margin: 0; font-weight: normal; }
-.bottom .flex-row > div > div p { margin: 0; font: 12px "黑体"; }
-.bottom .flex-row > p { position: relative; width: 162px;padding-top: 6px; padding-right: 21px; font: italic 14px "黑体"; line-height: 16px; }
-.bottom .flex-row > p:first-letter { margin-left: 43px; }
-.bottom .flex-row > p:before, .bottom .flex-row > p:after { position: absolute; font: 72px "黑体"; color: #d45d5c; }
-.bottom .flex-row > p:before { top: -12px; left: -40px; content: "“"; }
-.bottom .flex-row > p:after { bottom: -25px; right: -20px; content: "”"; float: right; }
+.bottom .text { width: 100%; justify-content: space-between; margin-top: 30px; }
+.bottom .text > div { justify-content: space-around; flex-shrink: 0; background: #DB3E75; color: #fff; width: 260px; height: 160px; }
+.bottom .text > div > span { font-size: 110px; border-right: 2px solid #fff; align-self: center; line-height: 86px; padding-right: 3px; }
+.bottom .text > div > div { width: 158px; align-self: center; height: 80px; }
+.bottom .text > div > div h3 { font: italic 21px "黑体"; line-heigh: 24px; margin: 0; font-weight: normal; }
+.bottom .text > div > div p { margin: 0; font: 12px "黑体"; }
+.bottom .text > p { position: relative; width: 162px;padding-top: 6px; padding-right: 21px; font: italic 14px "黑体"; line-height: 16px; }
+.bottom .text > p:first-letter { margin-left: 43px; }
+.bottom .text > p:before, .bottom .flex-row > p:after { position: absolute; font: 72px "黑体"; color: #d45d5c; }
+.bottom .text > p:before { top: -12px; left: -40px; content: "“"; }
+.bottom .text > p:after { bottom: -25px; right: -20px; content: "”"; float: right; }
 
+/* footer */
 footer { border-top: 1px solid #938e8c; height: 59px; }
 footer a { font: 12px "黑体"; color: #d45d5c; }
