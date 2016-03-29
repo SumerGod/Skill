@@ -1,0 +1,51 @@
+/* public start*/
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+body { background: #dedede; font-family: "Microsoft YaHei"; }
+img { border: 0 none; vertical-align: top; }
+.fixed { display: block; min-height: 1%; }
+*html .fixed { height: 1%; }
+.fl, .fr { display: inline; float: left; }
+.fr { float: right; }
+/* public end */
+/* header start */
+header { background: #333333; height: 60px; }
+header h1 { position: relative; font-size: 0; margin: 10px 0 0 40px; }
+header h1 img { position: absolute; top: 0; left: 0; width: 117px; height: 38px; }
+nav { line-height: 54px; }
+nav ul li { float: left; padding-right: 20px; }
+nav ul li a { color: #fff; font-size: 12px; }
+nav ul li a:hover { color: #ababab; }
+/* header end */
+/* main start */
+    /* article section aside */
+main article, main section, aside { margin: 20px 20px 0; padding: 48px 38px; background: #fff; border: 1px; box-shadow: 1px 1px 1px #000; }
+main article h2, main section h2 { color: #000; font-size: 22px; margin-bottom: 20px; }
+article .subtitle { font-size: 18px; color: #646b73; }
+article .author_time { font-size: 14px; color: #646b73; }
+article p { line-height: 27px; margin-top: 10px; text-indent: 2em; }
+article img { margin: 20px 0; }
+article ul.nostyle { padding-left: 20px; }
+article ul.nostyle li { list-style: none; }
+article table { width: 100%; background: #cccccc; font-size: 14px; }
+article th, article td { background: #fff; padding: 5px; }
+article th { text-align: left; background: #333333; color: #fff; }
+article tr.bg-inherit td { background: inherit; }
+section .pictures { padding-left: 38px; }
+section .pictures_item { margin-bottom: 10px; width:120px; height: 124px; text-align: center; border: 1px solid #cecece; }
+section .pictures_item a { font-size: 14px; color: #000; text-decoration: none; line-height: 32px; }
+section .pictures_item img { width: 100px; height: 80px; }
+/* main end */
+/* aside start */
+aside h2 { border-left: 3px solid #cccccc; font-size: 16px; line-height: 38px; padding-left: 10px; }
+aside table { padding: 10px; font-size: 16px; }
+aside table textarea { width: 600px; height: 100px; }
+aside table input[type="text"], aside table input[type="password"] { width: 140px; height: 20px; }
+aside table .input-helper { color: #cbcbcb; font-size: 14px; line-height: 34px; }
+aside table tr { line-height: 40px; }
+aside table tr>td:first-child { text-align: right; padding-right: 15px; width: 43%; }
+aside table .text-top { vertical-align: top; }
+aside .btn-submit { width: 100%; height: 38px; background: #3355d0; border: 1px solid #c5cdcf; color: #fff; border-radius: 8px; font-size: 14px; font-weight: bold; }
+/* aside end */
+/* footer start */
+footer { background: #000000; height: 50px; color: #fff; text-align: center; padding-top: 20px; font-size: 14px; margin-top: 20px; }
+/* footer end */
