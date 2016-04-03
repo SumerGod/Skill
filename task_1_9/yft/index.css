@@ -1,0 +1,567 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  margin: 0 auto;
+  font-family: "Microsoft Yahei";
+  background-color: #eeeeed; }
+
+h1, h2, h3, ul, p {
+  margin: 0; }
+
+img {
+  vertical-align: top; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.btn-primary {
+  width: 50px;
+  height: 25px;
+  color: #fff;
+  background-color: #388ac1;
+  border: 0;
+  border-radius: 3px;
+  font: 12px SimHei; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+/* header start */
+.header {
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  z-index: 99;
+  background-color: #2189bf; }
+  .header h1 {
+    height: 36px;
+    padding-top: 10px;
+    padding-left: 50px; }
+  .header .header_right {
+    width: 467px;
+    padding-right: 93px; }
+    .header .header_right input {
+      width: 313px;
+      height: 26px;
+      margin-top: 15px;
+      -webkit-border-radius: 13px;
+      -moz-border-radius: 13px;
+      border-radius: 13px;
+      border: 0;
+      text-indent: 35px;
+      background: url("./images/images.png") #fff no-repeat 17px 0; }
+    .header .header_right a {
+      height: 17px;
+      padding-left: 18px;
+      font-size: 12px;
+      color: #fff;
+      margin-top: 20px;
+      background: url("./images/images.png") no-repeat 0 -26px; }
+
+/* header end */
+/* container start */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 56px;
+  /* aside start */
+  /* aside end */
+  /* container_right start */
+  /* container_right end */ }
+  .container .aside {
+    width: 260px;
+    min-height: 1200px;
+    color: #697b8f;
+    background-color: #2a2e3d; }
+    .container .aside .user {
+      padding-left: 45px;
+      padding-top: 18px; }
+      .container .aside .user img {
+        width: 57px;
+        height: 57px;
+        padding: 4px;
+        border: 1px solid #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+      .container .aside .user h2 {
+        width: 158px;
+        padding-left: 18px;
+        padding-top: 19px;
+        font: 16px SimHei; }
+        .container .aside .user h2 a {
+          color: #fff; }
+    .container .aside .data {
+      padding: 21px 0 21px 45px;
+      margin-left: -12px; }
+      .container .aside .data div {
+        font: 12px Simsun;
+        width: 87px;
+        text-align: center; }
+        .container .aside .data div span {
+          display: block;
+          font: 16px SimHei; }
+      .container .aside .data .border2 {
+        border-right: 2px solid #323647; }
+    .container .aside .reports {
+      padding: 15px 0 12px 45px;
+      background-color: #393e4e;
+      font: 12px SimHei; }
+      .container .aside .reports h2 {
+        color: #fff;
+        line-height: 14px;
+        font-size: 12px;
+        padding-left: 25px;
+        background: url("./images/images.png") no-repeat 0 -199px; }
+      .container .aside .reports ul {
+        margin: 12px 0 0 22px; }
+        .container .aside .reports ul li {
+          margin: 16px 0 0;
+          line-height: 14px; }
+        .container .aside .reports ul .folder {
+          padding-left: 18px;
+          background: url("./images/folder_close.png") no-repeat; }
+          .container .aside .reports ul .folder ul {
+            display: none;
+            margin-left: 14px;
+            margin-bottom: 12px; }
+          .container .aside .reports ul .folder span {
+            padding-left: 16px;
+            background: url("./images/folder.png") no-repeat; }
+        .container .aside .reports ul .folder.open, .container .aside .reports ul .folder:hover {
+          background: url("./images/folder_open.png") no-repeat !important; }
+          .container .aside .reports ul .folder.open > ul, .container .aside .reports ul .folder:hover > ul {
+            display: block !important; }
+        .container .aside .reports ul .folder.active > span, .container .aside .reports ul .folder:hover > span {
+          color: #fff !important;
+          background: url("./images/folder_active.png") no-repeat !important; }
+        .container .aside .reports ul .file {
+          padding-left: 16px;
+          background: url("./images/file.png") no-repeat; }
+        .container .aside .reports ul .file.active, .container .aside .reports ul .file:hover {
+          color: #fff !important;
+          background: url("./images/file_active.png") no-repeat !important; }
+    .container .aside .nav {
+      padding-left: 45px; }
+      .container .aside .nav a {
+        margin-top: 16px;
+        margin-bottom: 34px;
+        display: block;
+        line-height: 14px;
+        color: #697b8f;
+        font: 12px SimHei;
+        padding-left: 25px; }
+      .container .aside .nav a:hover {
+        color: #fff; }
+      .container .aside .nav a.star {
+        background: url("./images/images.png") no-repeat 0 -43px; }
+      .container .aside .nav a.share {
+        background: url("./images/images.png") no-repeat 0 -57px; }
+      .container .aside .nav a.account {
+        background: url("./images/images.png") no-repeat 0 -71px; }
+  .container .container_right {
+    width: 1020px; }
+    .container .container_right .location {
+      height: 30px;
+      line-height: 30px;
+      text-indent: 30px;
+      color: #aaaaaa;
+      font-size: 12px;
+      background: #fff; }
+      .container .container_right .location a {
+        color: #aaaaaa;
+        padding: 0 3px; }
+      .container .container_right .location a.active {
+        color: #2189bf; }
+    .container .container_right .details {
+      width: 892px;
+      margin: 19px 0 0 59px; }
+      .container .container_right .details .filter {
+        height: 85px;
+        background: #ffffff;
+        border: 1px solid #dcdedf;
+        font: 12px SimHei;
+        padding-top: 13px;
+        margin-bottom: 10px; }
+        .container .container_right .details .filter .section {
+          float: left;
+          height: 60px;
+          padding-left: 20px;
+          padding-right: 8px;
+          line-height: 30px; }
+          .container .container_right .details .filter .section label {
+            padding: 0 10px; }
+          .container .container_right .details .filter .section input.bgnone {
+            background: #fff !important; }
+          .container .container_right .details .filter .section .bueatySelect {
+            position: relative;
+            display: inline; }
+            .container .container_right .details .filter .section .bueatySelect input {
+              width: 68px;
+              height: 23px;
+              text-indent: 5px;
+              padding-right: 17px;
+              border: 1px solid #cbcbcb;
+              background: url("./images/images.png") #fff no-repeat 51px -85px; }
+            .container .container_right .details .filter .section .bueatySelect ul {
+              width: 68px;
+              position: absolute;
+              top: 16px;
+              left: 0;
+              display: none;
+              z-index: 9;
+              background: #fff;
+              border: 1px solid #d5d5d6; }
+              .container .container_right .details .filter .section .bueatySelect ul li {
+                line-height: 24px;
+                text-indent: 5px; }
+              .container .container_right .details .filter .section .bueatySelect ul li:hover {
+                background: #ccc; }
+          .container .container_right .details .filter .section .bueatySelect.wider input {
+            width: 119px;
+            background: url("./images/images.png") no-repeat 102px -85px; }
+          .container .container_right .details .filter .section .bueatySelect.wider ul {
+            width: 119px; }
+          .container .container_right .details .filter .section .bueatySelect:hover ul {
+            display: block; }
+        .container .container_right .details .filter div.parties {
+          padding-right: 24px;
+          background: url("./images/images.png") no-repeat 190px -107px; }
+        .container .container_right .details .filter div.options label {
+          padding: 0 9px; }
+        .container .container_right .details .filter .submit {
+          margin-top: 18px;
+          margin-left: 16px; }
+      .container .container_right .details .timeline .fl {
+        position: relative;
+        width: 756px;
+        height: 65px; }
+        .container .container_right .details .timeline .fl .btn, .container .container_right .details .timeline .fl ul li {
+          border: 1px solid #cacdd1; }
+        .container .container_right .details .timeline .fl .items {
+          position: absolute;
+          top: 0;
+          left: 35px;
+          height: 100%;
+          overflow: hidden; }
+          .container .container_right .details .timeline .fl .items li {
+            width: 112px;
+            height: 65px;
+            margin-right: 3px;
+            text-align: center;
+            float: left;
+            padding-top: 10px; }
+            .container .container_right .details .timeline .fl .items li span {
+              display: block;
+              font-size: 14px;
+              color: #b0b0b0; }
+              .container .container_right .details .timeline .fl .items li span b {
+                font-size: 21px;
+                font-weight: normal;
+                color: #ec6500; }
+            .container .container_right .details .timeline .fl .items li span.first {
+              color: #000;
+              font-size: 12px;
+              margin-bottom: 5px; }
+          .container .container_right .details .timeline .fl .items li:hover, .container .container_right .details .timeline .fl .items li.active {
+            padding-top: 7px;
+            border-top: 4px solid #4388c8; }
+        .container .container_right .details .timeline .fl .btn {
+          position: absolute;
+          top: 0;
+          width: 31px;
+          height: 100%; }
+        .container .container_right .details .timeline .fl .btn.left {
+          left: 0;
+          background: url("./images/images.png") #fff no-repeat 0 -213px; }
+        .container .container_right .details .timeline .fl .btn.right {
+          right: 0;
+          background: url("./images/images.png") #fff no-repeat 0 -276px; }
+      .container .container_right .details .timeline .fr {
+        width: 131px;
+        height: 65px;
+        font-size: 12px;
+        border: 1px solid #cacdd1; }
+        .container .container_right .details .timeline .fr a {
+          display: block;
+          line-height: 31px;
+          padding-left: 43px;
+          margin-top: 17px;
+          margin-left: 19px;
+          background: url("./images/images.png") no-repeat 0 -168px; }
+      .container .container_right .details h3 {
+        font-size: 12px;
+        margin-top: 19px; }
+      .container .container_right .details .statistic li {
+        float: left;
+        width: 202px;
+        height: 72px;
+        padding-top: 12px;
+        margin-top: 4px;
+        margin-right: 28px;
+        border: 1px solid #d8d9da; }
+        .container .container_right .details .statistic li div {
+          width: 122px;
+          float: left;
+          font: 12px SimHei;
+          color: #b0b0b0;
+          line-height: 24px;
+          padding-left: 8px; }
+          .container .container_right .details .statistic li div b {
+            display: block;
+            color: #000; }
+        .container .container_right .details .statistic li span {
+          float: left;
+          display: block;
+          width: 60px;
+          height: 46px; }
+      .container .container_right .details .statistic li.green {
+        border-left: 4px solid #44b29e; }
+        .container .container_right .details .statistic li.green span {
+          background-color: #44b29e; }
+      .container .container_right .details .statistic li.blue {
+        border-left: 4px solid #388ac1; }
+        .container .container_right .details .statistic li.blue span {
+          background-color: #388ac1; }
+      .container .container_right .details .statistic li.red {
+        border-left: 4px solid #cf4a36; }
+        .container .container_right .details .statistic li.red span {
+          background-color: #cf4a36; }
+      .container .container_right .details .statistic li.yellow {
+        margin-right: 0;
+        border-left: 4px solid #e2cd46; }
+        .container .container_right .details .statistic li.yellow span {
+          background-color: #e2cd46; }
+      .container .container_right .details .graphic {
+        padding-top: 5px; }
+        .container .container_right .details .graphic .tab, .container .container_right .details .graphic .search, .container .container_right .details .graphic .calendar, .container .container_right .details .graphic .rank {
+          height: 357px;
+          margin-top: 8px;
+          background: #fff;
+          border: 1px solid #ced1d4;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          overflow: hidden; }
+          .container .container_right .details .graphic .tab h3, .container .container_right .details .graphic .search h3, .container .container_right .details .graphic .calendar h3, .container .container_right .details .graphic .rank h3 {
+            color: #afafaf;
+            font: 12px SimHei;
+            background: #f4f5f6;
+            line-height: 40px;
+            margin: 0;
+            text-indent: 20px;
+            border-bottom: 1px solid #e7e9eb; }
+        .container .container_right .details .graphic .tab, .container .container_right .details .graphic .rank {
+          width: 532px; }
+        .container .container_right .details .graphic .search, .container .container_right .details .graphic .calendar {
+          width: 352px; }
+        .container .container_right .details .graphic .tab ul {
+          position: relative;
+          width: 490px;
+          margin: 10px auto 0; }
+          .container .container_right .details .graphic .tab ul li {
+            float: left; }
+            .container .container_right .details .graphic .tab ul li span {
+              position: relative;
+              z-index: 2;
+              display: block;
+              width: 84px;
+              height: 28px;
+              text-align: center;
+              line-height: 28px;
+              color: #535353;
+              background: #ededf0;
+              margin-right: 5px;
+              border: 1px solid #ededf0;
+              border-bottom: 0;
+              -webkit-border-radius: 5px 5px 0 0;
+              -moz-border-radius: 5px 5px 0 0;
+              border-radius: 5px 5px 0 0; }
+            .container .container_right .details .graphic .tab ul li div {
+              display: none;
+              position: absolute;
+              top: 28px;
+              left: 0;
+              width: 490px;
+              background: #fff;
+              -webkit-border-radius: 0 5px 5px 5px;
+              -moz-border-radius: 0 5px 5px 5px;
+              border-radius: 0 5px 5px 5px;
+              border: 1px solid #cbcccc; }
+              .container .container_right .details .graphic .tab ul li div table {
+                font-size: 12px;
+                width: 403px;
+                margin: 28px auto 36px;
+                border: solid #d5d5d6;
+                border-width: 1px 0 0 1px; }
+                .container .container_right .details .graphic .tab ul li div table td {
+                  padding: 0;
+                  width: 101px;
+                  text-align: center;
+                  line-height: 30px;
+                  border: solid #d5d5d6;
+                  border-width: 0 1px 1px 0; }
+                .container .container_right .details .graphic .tab ul li div table td:hover {
+                  background-color: #f4f6f7; }
+          .container .container_right .details .graphic .tab ul li:hover span, .container .container_right .details .graphic .tab ul li.active span {
+            height: 29px;
+            background: #fff;
+            border-color: #cbcccc; }
+          .container .container_right .details .graphic .tab ul li:hover div, .container .container_right .details .graphic .tab ul li.active div {
+            display: block; }
+        .container .container_right .details .graphic .search {
+          font-size: 12px; }
+          .container .container_right .details .graphic .search .main {
+            padding: 17px 35px 0; }
+            .container .container_right .details .graphic .search .main p, .container .container_right .details .graphic .search .main strong {
+              padding-left: 16px; }
+            .container .container_right .details .graphic .search .main p {
+              color: #c3c2c2; }
+            .container .container_right .details .graphic .search .main div.table {
+              margin-top: 8px;
+              margin-bottom: 3px;
+              border: solid #dddedd;
+              border-width: 1px 0; }
+              .container .container_right .details .graphic .search .main div.table div {
+                width: 95px;
+                padding-left: 15px;
+                padding-bottom: 3px; }
+                .container .container_right .details .graphic .search .main div.table div p {
+                  padding: 0; }
+                .container .container_right .details .graphic .search .main div.table div span {
+                  line-height: 22px; }
+              .container .container_right .details .graphic .search .main div.table .border-right {
+                border-right: 1px solid #dddedd; }
+            .container .container_right .details .graphic .search .main .color-black {
+              color: #000;
+              line-height: 20px;
+              height: 129px;
+              margin-bottom: 3px;
+              border-bottom: 1px solid #e7e7e7; }
+            .container .container_right .details .graphic .search .main .protocol label {
+              color: #d6d6d6; }
+        .container .container_right .details .graphic .calendar .options {
+          width: 310px;
+          margin: 0 auto;
+          padding: 10px 0 10px 2px;
+          border-bottom: 1px solid #a9cfec; }
+          .container .container_right .details .graphic .calendar .options select, .container .container_right .details .graphic .calendar .options button {
+            color: #5e5e5e;
+            width: 72px;
+            height: 22px;
+            font: 12px SimHei;
+            background-color: #fff;
+            border: 1px solid #cacbcb; }
+          .container .container_right .details .graphic .calendar .options select {
+            float: left;
+            margin-right: 6px; }
+        .container .container_right .details .graphic .calendar table {
+          width: 310px;
+          margin: 0 auto;
+          font-weight: bold;
+          font: 12px SimHei;
+          text-align: center; }
+          .container .container_right .details .graphic .calendar table tr.border2 {
+            height: 31px;
+            line-height: 23px; }
+            .container .container_right .details .graphic .calendar table tr.border2 th {
+              border-bottom: 2px solid #e1e1e2; }
+          .container .container_right .details .graphic .calendar table td {
+            width: 41px;
+            height: 41px;
+            padding: 2px 2px;
+            line-height: 15px; }
+            .container .container_right .details .graphic .calendar table td b {
+              display: block; }
+          .container .container_right .details .graphic .calendar table td:hover, .container .container_right .details .graphic .calendar table td.highlight {
+            border: 1px solid #f4c21d; }
+          .container .container_right .details .graphic .calendar table td.weekend b {
+            color: #cd262c; }
+          .container .container_right .details .graphic .calendar table td.holiday span {
+            color: #cd262c; }
+        .container .container_right .details .graphic .rank table {
+          width: 450px;
+          margin: 18px auto 0;
+          background: #c7c7c8; }
+          .container .container_right .details .graphic .rank table th, .container .container_right .details .graphic .rank table td {
+            text-align: center;
+            background: #fff; }
+          .container .container_right .details .graphic .rank table th {
+            line-height: 24px; }
+          .container .container_right .details .graphic .rank table th.w66 {
+            width: 66px; }
+          .container .container_right .details .graphic .rank table th.w90 {
+            width: 90px; }
+          .container .container_right .details .graphic .rank table p {
+            float: left;
+            width: 104px;
+            padding: 4px 22px 4px 0;
+            font: 12px SimHei;
+            text-align: right; }
+          .container .container_right .details .graphic .rank table td div {
+            position: relative;
+            margin-top: 10px;
+            float: left;
+            width: 167px;
+            height: 4px;
+            background: #dcdcdc; }
+            .container .container_right .details .graphic .rank table td div div {
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin: 0;
+              background: #7fcbf0;
+              overflow: hidden; }
+          .container .container_right .details .graphic .rank table tr.no1 div div {
+            width: 141px !important;
+            background: #ec6d51 !important; }
+          .container .container_right .details .graphic .rank table tr.no2 div div {
+            width: 121px !important;
+            background: #ef804f !important; }
+          .container .container_right .details .graphic .rank table tr.no3 div div {
+            width: 107px !important;
+            background: #f19e4f !important; }
+          .container .container_right .details .graphic .rank table tr.no4 div div {
+            width: 100px !important; }
+          .container .container_right .details .graphic .rank table tr.no5 div div {
+            width: 89px !important; }
+          .container .container_right .details .graphic .rank table tr.no6 div div {
+            width: 82px !important; }
+          .container .container_right .details .graphic .rank table tr.no7 div div {
+            width: 77px !important; }
+          .container .container_right .details .graphic .rank table tr.no8 div div {
+            width: 67px !important; }
+          .container .container_right .details .graphic .rank table tr.no9 div div {
+            width: 62px !important; }
+          .container .container_right .details .graphic .rank table tr.no10 div div {
+            width: 57px !important; }
+
+/* container end */
+
+/*# sourceMappingURL=index.css.map */
