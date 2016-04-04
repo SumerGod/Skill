@@ -325,7 +325,8 @@ header {
     flex: 2;
     text-align: center;
     color: #fff;
-    background: url("./images/act1.png") no-repeat; }
+    background: url("./images/act1.png") no-repeat;
+    background-size: 100% !important; }
     .details_1 .details_1_img h3 {
       display: flex;
       flex-direction: column;
