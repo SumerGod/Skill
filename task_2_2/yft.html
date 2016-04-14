@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+
+请输入过滤条件：<input type="text" id="aqi-input" value="60">
+<button id="aqi-btn">确认</button>
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+        <li>第一名：福州（样例），10</li>
+          <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    (function () {
+
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+         */
+
+        var oUl = document.getElementById('aqi-list'),
+            oInput = document.getElementById('aqi-input'),
+            oBtn = document.getElementById('aqi-btn');
+
+        var Refresher = {
+            dic : ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'],
+            refresh : function (condition) {
+                var i = 0, num = 0, html = '', arr = [], item;
+                for (i in aqiData) {
+                    if (aqiData[i][1] > condition) {
+                        arr[aqiData[i][1]] = (arr[aqiData[i][1]] ? arr[aqiData[i][1]] + '、'+aqiData[i][0] : aqiData[i][0]);
+                    }
+                }
+                num = count(arr);
+                for (item in arr) {
+                    html = '<li>第' + this.dic[-- num] + '名：' + arr[item] + '，' + item + '</li>' + html;
+                }
+                oUl.innerHTML = html;
+            }
+        };
+        /* 计算对象元素个数 */
+        function count (o) {
+            var i, n = 0;
+            for (i in o) {
+                n ++;
+            }
+            return n;
+        }
+
+        Refresher.refresh(oInput.value);
+        oBtn.onclick = function () {
+            var condition = oInput.value;
+            if (!isNaN(condition)) {
+                Refresher.refresh();
+            } else {
+                alert('您输入的不是数字, 请重新输入');
+                oInput.value = '';
+                oInput.focus();
+            }
+        }
+
+    })();
+
+</script>
+</body>
+</html>

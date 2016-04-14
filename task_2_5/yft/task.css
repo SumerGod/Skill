@@ -1,0 +1,21 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.aqi-chart-wrap ul {
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+.aqi-chart-wrap ul li {
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+}
