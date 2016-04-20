@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十：基础JavaScript练习（三）</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei";
+        }
+        div.container {
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+        }
+        div.container textarea {
+            width: 240px;
+            height: 50px;
+        }
+        div.container span {
+            display: flex;
+        }
+        div.container .container_search, div.container span span {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        ul#queue-list {
+            padding-left: 0;
+        }
+        ul#queue-list li {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            float: left;
+            list-style: none;
+            padding: 8px;
+            color: #ffffff;
+            background-color: red;
+        }
+        ul#queue-list li.highlight {
+            color: salmon;
+            background-color: chartreuse;
+        }
+    </style>
+    <script src="task.js"></script>
+</head>
+<body>
+<div class="container">
+    <textarea name="" id="queue-input" placeholder="请输入中文、英文、数字，您可以以其他字符作为分隔"></textarea>
+    <span id="queue-operate">
+        <span>
+            <button id="queue-unshift">左侧入</button>
+            <button id="queue-shift">左侧出</button>
+        </span>
+        <span>
+            <button id="queue-push">右侧入</button>
+            <button id="queue-pop">右侧出</button>
+        </span>
+    </span>
+    <span class="container_search">
+        <input type="text" id="queue-keywords" placeholder="请输入关键词">
+        <button id="queue-search">模糊查询</button>
+    </span>
+</div>
+<ul id="queue-list"></ul>
+</body>
+</html>
