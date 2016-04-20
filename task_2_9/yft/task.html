@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十一：基础JavaScript练习（四）</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Microsoft YaHei';
+        }
+        ul.list {
+            padding-left: 0;
+        }
+        ul.list li {
+            float: left;
+            padding: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #fff;
+            line-height: 20px;;
+            list-style: none;
+        }
+        ul.list.blue li {
+            background-color: skyblue;
+        }
+        ul.list.orange li {
+            background-color: lightsalmon;
+        }
+        ul.list li.error {
+            background-color: red;;
+        }
+        .hobbies {
+            clear: both;
+            width: 240px;
+        }
+        .hobbies textarea {
+            width: 100%;
+            height: 60px;
+        }
+    </style>
+    <script src="task.js"></script>
+</head>
+<body>
+<label for="tags_input">Tag:</label>
+<input type="text" id="tags_input" placeholder="请输入一个标签">
+<ul id="tags_list" class="list blue">
+    <li class="tags_delete">点击删除 HTML5</li>
+    <li>Javascript</li>
+    <li>CSS</li>
+</ul>
+<section class="hobbies">
+    <textarea name="" id="hobbies_input" placeholder="输入你的兴趣爱好"></textarea>
+    <button id="hobbies_submit">确认兴趣爱好</button>
+    <ul id="hobbies_list" class="list orange">
+        <li>游泳</li>
+        <li>瑜伽</li>
+        <li>摄影</li>
+    </ul>
+</section>
+
+</body>
+</html>

@@ -69,7 +69,7 @@ function getNumber () {
 }
 
 // 盛放队列数据的数组
-var queue = [10,20,50,40,60,70,90,10,40,100];
+var queue = [];
 
 // 渲染显示视图
 function renderList () {
